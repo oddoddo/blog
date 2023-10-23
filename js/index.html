@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <!-- <script type="module" defer src="./main.js"></script> -->
+        <!-- <script defer src="./함수.js"></script> -->
+        <!-- <script defer src="./클래스.js"></script> -->
+        <!-- <script defer src="./number.js"></script> -->
+        <script src="./연산자와구문.js"></script>
+    </head>
+    <body>
+        <div class="parent">
+            <!-- 주석 -->
+            DOM
+            <div class="child">text1</div>
+        </div>
+
+        <script>
+            const parent = document.querySelector('.parent');
+
+            // parent의 자식 노드들을 출력한다.
+            console.log(parent.childNodes); // NodeList(5) [text, comment, text, div, text]
+
+            // parent의 자식 요소들을 출력한다.
+            // 요소는 노드의 하위 개념으로 노드 중에서도 태그를 의미한다.
+            console.log(parent.children); // HTMLCollection(1) [div.child]
+        </script>
+    </body>
+</html>
